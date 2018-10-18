@@ -1,0 +1,319 @@
+body{
+    background-color: #695eb0;
+}
+a 
+   {
+       color: white;
+     text-decoration: none;
+       
+   }
+.aprivercy{
+    text-decoration: underline;
+
+}
+   li{
+    list-style-type: none;
+
+}
+.body-colors-change {
+    border: 0.5px solid #695eb0 ;
+    border-radius: 15px;
+	width: 100%;
+	height: 100%;
+	color: #fff;
+	background: linear-gradient(-45deg,  rgb(224, 129, 204), #E73C7E, #EE7752,rgb(224, 129, 204));
+	background-size: 400% 400%;
+	
+}
+.image-first-format
+{   width: 300px;
+    height: 200px;
+    border-radius: 5%;
+    animation-name:imgmsganimation;
+    animation-duration: 2s;
+}
+.image-second-format{
+    width: 50px;
+    height: 50px;
+    border-radius: 5%;  
+}
+/***********generic part *******************/
+.logo-text {   
+      color: #ffffff;
+     
+       width: 33%; 
+       } 
+  
+.header-display{
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    padding: 5px;
+    /* position: sticky;
+    top: 0;*/
+       }
+#header-nav-list{
+    display: flex;
+    align-content:center;
+    justify-content: space-around;
+    align-items: baseline;
+    width: 33%;
+    }
+
+.button-second-format{
+    border: 0.5px solid white;
+    border-radius: 20px;
+    margin: 12px;
+    padding: 10px 40px;
+ 
+}
+.button-second-format:hover  { 
+    background-color: #ee0076;
+   }
+.button-first-format:hover{
+        background-color: rgba(255,255, 255, 0.3);
+        border: 0.5px solid rgba(255,255, 255, 0.3);
+        border-radius: 20px;
+        padding: 10px 40px;
+
+    }
+/***************header ended and masseges masseges  started *****************/
+.main-format{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.discussion_masseges{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;  
+
+    }
+
+.text-first-format
+    {
+        display: flex;
+        justify-content: center;  
+        color: #464064;
+        background-color:  white;
+        border-radius: 10px;
+        margin: 10px;
+        max-width: max-content;
+        padding: 10px 10px;
+        display: inline-block;
+        animation-name:textmsganimation;
+        animation-duration: 1s;
+    }
+    .last-msg{
+    display: flex;  
+    align-content:flex-start;
+    justify-content: space-between;
+    width: 50%;
+    animation-name:lasttextmsganimation;
+        animation-duration: 3s;
+    }
+    .text-second-format{
+        background-color: #f8f8f8;
+        border: 1px solid #c8c8c8;
+        border-radius: 5px;
+        position: relative;
+        background: white;
+        border-radius: .4em;
+        color: #5f52a3;
+        padding: 10px 10px;
+      }
+   .text-second-format:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 0;
+        height: 0;
+        border: 20px solid transparent;
+        border-top-color: white;
+        border-bottom: 0;
+        border-left: 0;
+        margin-left: -10px;
+        margin-bottom: -20px;
+    }
+ /************ buttons css part ***********/   
+ .text-third-format{
+    animation-name:tirdtextmsganimation;
+    animation-duration: 4s;
+ }
+.buttons-display
+    {
+        display: flex;  
+        align-content:flex-start;
+        justify-content: space-between;
+        width: 50%;
+        animation-name:tirdtextmsganimation;
+    animation-duration: 4s;
+        
+       }
+.button-format {
+    background-color : #ee0076;
+    color : white;
+    padding : 30px 80px;
+    margin: 10px;
+    border: 1px solid #ee0076;
+}
+.button-format:hover{
+    background-color : #ec5da5;
+    box-shadow: 0 4px 4px 0 rgb(43, 40, 40);
+}
+.privarcy-display {
+        display: flex;
+        justify-content: center; 
+        color : white;
+        padding-right:200px;
+        margin-bottom: 50px;
+    }
+
+.option
+    {
+        display: flex;
+        justify-content: center; 
+        color : white;
+        padding-right:350px;
+    }
+
+/********** animation *******/
+@keyframes textmsganimation{
+    from {
+        margin-left: 100%;
+        
+      }
+    
+      to {
+        margin-left: 0%;
+        
+      }
+    
+}
+@keyframes lasttextmsganimation{
+    from {
+        margin-left: 100%;
+        
+      }
+    
+      to {
+        margin-left: 0%;
+        
+      }
+    
+}
+
+@keyframes imgmsganimation{
+    from {
+        margin-left: 100%;
+        
+      }
+    
+      to {
+        margin-left: 0%;
+        
+      }
+    
+}
+
+@keyframes tirdtextmsganimation{
+    from {
+        margin-top: 100%;
+        
+      }
+    
+      to {
+        margin-top: 0%;
+        
+      }
+    
+}
+/*********** media ***********/
+@media only screen and (max-width: 1024px) {
+    
+    .body-colors-change {
+        border: 0.5px solid #695eb0 ;
+        border-radius: 15px;
+        width: 100%;
+        height: 100%;
+        color: #fff;
+        background: linear-gradient(-45deg,  rgb(224, 129, 204), #E73C7E, #EE7752,rgb(224, 129, 204));
+       padding: 10% 10%;
+        
+    }
+    .header-display{
+        width: 100%;
+        display: flex;
+        align-content: center;
+        align-items: baseline;
+        justify-content: space-around;
+        
+    }
+  
+    .logo-text{
+        font-size: 50px;
+    }
+    #header-nav-list{
+        display: flex;
+        align-content: center;
+        justify-content: space-between;
+        width: 60%;
+      
+    }
+    .button-first-format{
+        font-size: 40px;
+        padding: 10% 10%;
+       
+    }
+    .button-second-format{
+        font-size: 40px;
+        width: 200px;
+        padding: 10% 10%;
+    }
+    
+    .main-format{
+        width: 100%;
+    }
+    .discussion_masseges{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;  
+        width: 100%;
+    }
+    .text-first-format{
+        padding: 40px 40px;
+        font-size: 40px;
+    }
+    .image-first-format{
+        width: 400px;
+        height: 400px;
+    }
+    .image-second-format{
+        width: 150px;
+        height: 150px;
+    }
+    .text-second-format{
+        padding: 60px 50px;
+        font-size: 40px;
+       
+    }
+    .text-third-format{
+        font-size: 40px;
+    }
+    .buttons-display{
+        padding: 50px 50px;
+        font-size: 40px;
+    }
+    .button-format{
+        padding: 50px 50px;
+        font-size: 40px;
+    }
+    .privarcy-display{
+        display: flex;
+        justify-content: center; 
+        width: 100%;
+        font-size: 40px;
+    }
+}
